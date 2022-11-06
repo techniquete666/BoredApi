@@ -8,11 +8,11 @@
 import Foundation
 
 struct Headers: Decodable {
-    let activity: String?
-    let type: String?
-    let participants: Int?
-    let price: Int?
-    let link: String?
-    let key: String?
-    let accessibility: Int?
+    let activity: String
+    let type: String
+    let participants: Int
+    let price: Int
+    let link: String
+    let key: String
+    let accessibility: Int
 }
