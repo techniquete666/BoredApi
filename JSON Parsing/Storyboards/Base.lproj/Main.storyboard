@@ -20,17 +20,11 @@
                                 <rect key="frame" x="71.666666666666686" y="376" width="250" height="100"/>
                                 <color key="backgroundColor" systemColor="systemGray3Color"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="250" id="9Bn-Ca-A2q">
-                                        <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                                <integer key="value" value="20"/>
-                                            </userDefinedRuntimeAttribute>
-                                        </userDefinedRuntimeAttributes>
-                                    </constraint>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="250" id="9Bn-Ca-A2q"/>
                                     <constraint firstAttribute="height" constant="100" id="Jak-JJ-uGo"/>
                                 </constraints>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                <state key="normal" title="Get data">
+                                <state key="normal" title="Show data">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <userDefinedRuntimeAttributes>
@@ -42,18 +36,33 @@
                                     <action selector="buttonPressed" destination="BYZ-38-t0r" eventType="touchUpInside" id="Gls-ta-vVA"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="7" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qGs-M1-Qzl">
+                                <rect key="frame" x="30" y="526" width="333" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="U1R-ab-000"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="wuU-ab-sw1" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Hhr-YZ-KPk"/>
-                            <constraint firstItem="wuU-ab-sw1" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Xx1-Tr-f6Q"/>
+                            <constraint firstItem="qGs-M1-Qzl" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="1kP-WE-JbB"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="qGs-M1-Qzl" secondAttribute="trailing" constant="30" id="2Xi-tX-UkR"/>
+                            <constraint firstItem="wuU-ab-sw1" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="JZ9-RV-Orx"/>
+                            <constraint firstItem="qGs-M1-Qzl" firstAttribute="top" secondItem="wuU-ab-sw1" secondAttribute="bottom" constant="50" id="x4P-xn-JHo"/>
+                            <constraint firstItem="wuU-ab-sw1" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="y25-to-eHh"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="infoLabel" destination="qGs-M1-Qzl" id="mjC-r5-GiW"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="48" y="-2"/>
+            <point key="canvasLocation" x="-476" y="-52"/>
         </scene>
     </scenes>
     <resources>

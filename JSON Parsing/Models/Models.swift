@@ -15,4 +15,16 @@ struct Headers: Decodable {
     let link: String
     let key: String
     let accessibility: Int
+    
+    var description: String {
+        """
+        Activity: \(activity)
+        Type: \(type)
+        Participants: \(participants)
+        Price: \(price)
+        Link: \(link)
+        Key: \(key)
+        Accessibility: \(accessibility)
+        """
+    }
 }
