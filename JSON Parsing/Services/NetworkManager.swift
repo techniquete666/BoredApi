@@ -17,8 +17,6 @@ enum NetworkError: Error {
     case decodingError
 }
 
-var headers: [Headers] = []
-
 class NetworkManager {
     static let shared = NetworkManager()
     

@@ -11,10 +11,10 @@ struct Headers: Decodable {
     let activity: String
     let type: String
     let participants: Int
-    let price: Int
+    let price: Double
     let link: String
     let key: String
-    let accessibility: Int
+    let accessibility: Double
     
     var description: String {
         """
@@ -27,4 +27,5 @@ struct Headers: Decodable {
         Accessibility: \(accessibility)
         """
     }
+     
 }
