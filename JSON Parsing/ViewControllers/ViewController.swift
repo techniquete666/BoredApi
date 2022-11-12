@@ -23,11 +23,11 @@ class ViewController: UIViewController {
      }
     
     private func fetchData(from url: String) {
-        NetworkManager.shared.fetch(from: Link.link.rawValue) { result in
+        NetworkManager.shared.fetch(from: Link.link.rawValue) { [weak self] result in
             switch result {
             case .success(let data):
                 print(data)
-                self.headers = data
+                self?.headers = data
             case .failure(let error):
                 print(error.localizedDescription)
             }
